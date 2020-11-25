@@ -1,8 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="dto.Product" %>
-<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
-<!DOCTYPE html>
+<%@ page import="dao.ProductRepository" %>
+
 <html>
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity ="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1f784/j6cY/iJTQUOhcwr7x9JvoRxT2MZw17" crossorigin="anonymous">
@@ -18,7 +18,8 @@
 	</div>
 	</div>
 	<%
-		ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+		ProductRepository dao = ProductRepository.getInstance();	
+		ArrayList<Product> listOfProducts = dao.getAllProducts();
 	%>
 	<div class="containe">
 		<div class="row" align="center">
