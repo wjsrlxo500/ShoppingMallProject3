@@ -5,7 +5,7 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity ="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1f784/j6cY/iJTQUOhcwr7x9JvoRxT2MZw17" crossorigin="anonymous">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" integrity ="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1f784/j6cY/iJTQUOhcwr7x9JvoRxT2MZw17" crossorigin="anonymous">
 <title>상품 목록</title>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
@@ -29,6 +29,7 @@
 				
 			%>
 				<div class="col-md-4">
+					<img src="./resources/images/<%=product.getFilename() %>" style="width:100%">
 					<h3><%=product.getPname() %></h3>
 					<p><%=product.getDescription() %>
 					<p><%=product.getUnitPrice() %>원

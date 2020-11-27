@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity ="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1f784/j6cY/iJTQUOhcwr7x9JvoRxT2MZw17" crossorigin="anonymous">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" integrity ="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1f784/j6cY/iJTQUOhcwr7x9JvoRxT2MZw17" crossorigin="anonymous">
 <title>상품 상세 정보</title>
 </head>
 <body>
@@ -21,6 +21,9 @@
 	%>
 	<div class="container">
 		<div class="row">
+		<div clss="col-md-5">
+			<img src="./resources/images/<%=product.getFilename() %>" style="width:100%">
+		</div>
 			<div class="col-md-6">
 			<h3><%=product.getPname() %></h3>
 			<p><%=product.getDescription() %>
