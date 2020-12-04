@@ -9,9 +9,9 @@
 	request.setCharacterEncoding("UTF-8");
 	
 	String filename = "";
-	String realFolder = "C:\\upload"; //À¥ ¾îÇÃ¸®ÄÉÀÌ¼Ç»óÀÇ Àı´ë °æ·Î
-	String encType = "utf-8";	//ÀÎÄÚµù Å¸ÀÔ
-	int maxSize = 5 * 1024 * 1024;	//ÃÖ´ë ¾÷·ÎµåµÉ ÆÄÀÏÀÇ Å©±â5mb
+	String realFolder = "C:\\upload"; //ì›¹ ì–´í”Œë¦¬ì¼€ì´ì…˜ìƒì˜ ì ˆëŒ€ ê²½ë¡œ
+	String encType = "utf-8";	//ì¸ì½”ë”© íƒ€ì…
+	int maxSize = 5 * 1024 * 1024;	//ìµœëŒ€ ì—…ë¡œë“œë  íŒŒì¼ì˜ í¬ê¸°5mb
 	
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, new DefaultFileRenamePolicy());
 
@@ -59,15 +59,3 @@
 	response.sendRedirect("products.jsp");
 
 %>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>

@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" integrity ="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1f784/j6cY/iJTQUOhcwr7x9JvoRxT2MZw17" crossorigin="anonymous">
+<script type = "text/javascript" src = "./resources/js/validation.js"></script>
 <title>상품 등록</title>
 </head>
 <body>
@@ -64,11 +65,11 @@
 					<input type="radio" name="condition" value="Refurbished" > 재생 제품
 				</div>
 			</div>
-			<div class="form-group-row">
+			<div class="form-group row">
 			<label class="col-sm-2">이미지</label>
 			<div class="col-sm-5">
 				<input type="file" name="productImage" class="form-control">
-			
+			</div>
 			</div>
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10">

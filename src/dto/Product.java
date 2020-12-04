@@ -15,7 +15,7 @@ public class Product implements Serializable{
 	private String category;	//분류
 	private long unitsInStock;	//재고수
 	private String condition;	//신상품 or 중고품 or 재생품
-	private String filename; //이미지 파일명
+	private String filename; // 이미지 파일명
 	
 	public Product() {
 		super();
